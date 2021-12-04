@@ -20,11 +20,15 @@
   },
   "homepage": "https://github.com/gudn/mathzz#readme",
   "devDependencies": {
+    "@types/config": "^0.0.40",
     "@types/node": "^16.11.6",
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.14",
     "rimraf": "^3.0.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "config": "^3.3.6"
   }
 }
