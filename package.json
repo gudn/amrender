@@ -1,0 +1,30 @@
+{
+  "name": "mathzz",
+  "version": "1.0.0",
+  "description": "A simple math render bot for Telegram",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "dev": "nodemon src/index.ts",
+    "clean": "rimram dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gudn/mathzz.git"
+  },
+  "author": "Daniil Novoselov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gudn/mathzz/issues"
+  },
+  "homepage": "https://github.com/gudn/mathzz#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
