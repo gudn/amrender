@@ -6,3 +6,9 @@ services:
     - 3000:8080
     tmpfs:
     - /tmp
+  amrender:
+    build: .`
+    image: gudn/amrender
+    env_file: ./TOKEN
+    depends_on:
+    - tex2png
