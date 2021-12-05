@@ -1,0 +1,7 @@
+{
+  "services": {
+    "tex2png": {
+      "url": "http://tex2png:8080/"
+    }
+  }
+}

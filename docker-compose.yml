@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tex2png:
+    image: gudn/tex2png
+    ports:
+    - 3000:8080
+    tmpfs:
+    - /tmp
