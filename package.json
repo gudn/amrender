@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch-ts": "tsc -w",
     "dev": "nodemon src/index.ts",
-    "clean": "rimram dist/"
+    "clean": "rimraf dist/"
   },
   "repository": {
     "type": "git",
