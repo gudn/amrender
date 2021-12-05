@@ -3,7 +3,8 @@ import { Telegraf } from 'telegraf'
 import { convert_, OutputFormat } from 'am-parse'
 import fetch from 'cross-fetch'
 
-const amToTex = (s: string) => `$\\displaystyle ${convert_(s, OutputFormat.Latex, '')}$`
+const amToTex = (s: string) =>
+  `$\\displaystyle ${convert_(s, OutputFormat.Latex, '')}$`
 
 const bot = new Telegraf(config.get('bot.token'))
 
@@ -11,7 +12,10 @@ process.once('SIGINT', () => bot.stop('SIGINT'))
 
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
 
-bot.start(ctx => ctx.reply('mathzz'))
+bot.start(ctx => {
+  ctx.reply('Just send me AsciiMath string and I answer with rendered image')
+})
+
 bot.on('text', async ctx => {
   const am = ctx.message.text
   try {

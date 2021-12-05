@@ -1,5 +1,5 @@
 {
-  "name": "mathzz",
+  "name": "amrender",
   "version": "1.0.0",
   "description": "A simple math render bot for Telegram",
   "main": "dist/index.js",
